@@ -49,12 +49,8 @@ function resultado(msg, isValid) {
     res.innerHTML = '';
 
     const p = criaP();
-    if (isValid) {
-        p.classList.add("paragrafo-res");
-    }
-    else {
-        p.classList.add("bad");
-    }
+    p.className = isValid ? "paragrafo-res":"bad";
+    
     
     p.innerHTML = msg
     res.appendChild(p);
