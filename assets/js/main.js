@@ -51,7 +51,6 @@ function resultado(msg, isValid) {
     const p = criaP();
     p.className = isValid ? "paragrafo-res":"bad";
     
-    
     p.innerHTML = msg
     res.appendChild(p);
 }
